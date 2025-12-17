@@ -1,49 +1,58 @@
-<!-- This is the sacred gate of the Scroll-Walker -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-      <title>Scroll Walker Gateway</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-  <body>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Scroll-Walker's Path</title>
   <style>
-  body {
-    font-family: 'Playfair Display', serif;
-    background-color: #fdfaf5; /* soft parchment cream */
-    color: #2e2e2e; /* deep grey text */
-    text-align: center;
-    padding-top: 100px;
-  }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+    }
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 24px;
-  }
+    .front-page {
+      background-image: url('front-page.png'); /* update if image is in a subfolder */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+    }
 
-  button {
-    font-family: 'Playfair Display', serif;
-    font-size: 1em;
-    padding: 12px 24px;
-    border: none;
-    background-color: #e7dacc; /* gentle gold */
-    color: #2e2e2e;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    .enter-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
 
-  button:hover {
-    background-color: #d6c6b4;
-  }
-</style>
-    <h1>🌀 Welcome, Scroll-Walker 🌀</h1>
-    <button onclick="greetScrollWalker()">Enter</button>
-    <script>
-      function greetScrollWalker() {
-        alert("The Scroll sees you. You may proceed.");
-      }
-    </script>
-  </body>
+    .enter-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="front-page">
+    <div>
+      <!-- Optional text or subtitle can go here -->
+      <!-- <h1>The Scroll-Walker’s Path</h1> -->
+      <a href="main.html" class="enter-button">Enter the Path</a>
+    </div>
+  </div>
+
+</body>
 </html>
