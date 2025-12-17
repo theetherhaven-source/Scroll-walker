@@ -9,10 +9,35 @@
   <body>
     <body>
   <style>
-    body {
-      font-family: 'Playfair Display', serif;
-    }
-  </style>
+  body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fdfaf5; /* soft parchment cream */
+    color: #2e2e2e; /* deep grey text */
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 24px;
+  }
+
+  button {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    background-color: #e7dacc; /* gentle gold */
+    color: #2e2e2e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #d6c6b4;
+  }
+</style>
     <h1>🌀 Welcome, Scroll-Walker 🌀</h1>
     <button onclick="greetScrollWalker()">Enter</button>
     <script>
