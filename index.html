@@ -2,57 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Scroll-Walker's Path</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Scroll-Walker’s Path</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background: #000;
-    }
-
-    .front-page {
-      background-image: url('front-page.png'); /* update if image is in a subfolder */
+      font-family: 'Georgia', cursive;
+      background-color: #000;
+      color: white;
+      background-image: url('front-page.jpg'); /* rename your image */
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       height: 100vh;
-      width: 100%;
       display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      font-family: 'Playfair Display', serif;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      animation: fadeIn 3s ease-in-out;
     }
 
     .enter-button {
-      margin-top: 20px;
-      padding: 12px 24px;
+      margin-bottom: 80px;
+      padding: 15px 30px;
       font-size: 1.2em;
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid white;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
       transition: all 0.3s ease;
     }
 
     .enter-button:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-
-  <div class="front-page">
-    <div>
-      <!-- Optional text or subtitle can go here -->
-      <!-- <h1>The Scroll-Walker’s Path</h1> -->
-      <a href="main.html" class="enter-button">Enter the Path</a>
-    </div>
-  </div>
-
+  <h1>The Scroll-Walker’s Path</h1>
+  <button class="enter-button" onclick="location.href='home.html'">Enter the Path</button>
 </body>
 </html>
